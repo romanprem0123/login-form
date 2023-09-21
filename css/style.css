@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+#container{
+    min-height: 100vh;
+    background: #44444487;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form{
+    width: 60%;
+    height: 450px;
+    background-color: #fff;
+    display: flex;
+    text-align: center;
+}
+.left{
+    width: 35%;
+    padding: 20px;
+    color: #fff;
+    background-color: #3bb397;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    & h2{
+        font-size: 28px;
+        font-weight: 700;
+        padding: 15px 0;
+    }
+
+    & p{
+        font-size: 13px;
+        line-height: 22px;
+    }
+    & a{
+        display: inline-flex;
+        color: #fff;
+        font-size: 12px;
+        padding: 14px 60px;
+        border: 1px solid #fff;
+        border-radius: 30px;
+        margin-top: 25px;
+        transition: all 0.2s ease-in;
+
+        &:hover{
+            color: black;
+            background-color: #fff;
+        }
+    }
+}
+.right{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    & h2{
+        font-size: 28px;
+        color: #3aaf9f;
+    }
+
+    & .icons {
+        display: inline-flex;
+        padding: 10px 0;
+        margin: 15px 0;
+        
+        & a{
+            height: 25px;
+            width: 25px;
+            border-radius: 50%;
+            box-shadow: 0 0 2px grey;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+            margin: 0 8px;
+            color: black;
+
+         }
+    }
+
+    & p{
+        font-size: 12px;
+        margin-top: 10px;
+
+    }
+    & form{
+        margin-top: 20px;
+
+        & .text{
+            position: relative;
+
+            & input{
+                width: 55%;
+                padding: 10px 5px 10px 35px;
+                border: none;
+                outline: none;
+                border-radius: 3px;
+                background-color: #f4f8f7;
+                margin-bottom: 10px;
+                
+            }
+
+            & i{
+                position: absolute;
+                top: 11px;
+                left: calc(30% - 25px);
+                font-size: 14px;
+            }
+        }
+
+        & a{
+            display:inline-flex;
+            color: #fff;
+            background-color: #3aaf9f;
+            font-size: 12px;
+            padding: 14px 55px;
+            border: 1px solid #3aaf9f;
+            border-radius: 30px;
+            margin-top: 10px;
+            transition: all 0.2s ease-in;
+
+            &:hover{
+                color: #3aaf9f;
+                background-color: #fff;
+                
+            }
+        }
+    }
+}
